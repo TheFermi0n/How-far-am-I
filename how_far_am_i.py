@@ -39,7 +39,7 @@ def printmd(string):
 
 
 todays_date = dt.today()
-file_name = "ar_data.csv"
+file_name = "/Users/hanzo/genshin/How-far-am-I/ar_data.csv"
 
 adventure_rank_data = pd.read_csv(file_name, delimiter="\t")
 
@@ -86,7 +86,7 @@ def result_display():
     print(f"EXP = {adventurer_current_EXP} / {next_ar_exp}")
     print()
     print(f"\033[1mResin usage Details\033[0m")
-    print(f"Number of Domians cleared per day = {number_of_domain}")
+    print(f"Number of Domains cleared per day = {number_of_domain}")
     print(f"Number of leyline blessings claimed per day = {number_of_leyline}")
     print(f"Number of weekly boss killed = {number_of_weekly}")
     print(f"Number of elite boss reward claimed per day = {number_of_elite}")
